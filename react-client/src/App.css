@@ -1,0 +1,313 @@
+.App{
+  text-align: center;
+  width: 100vw;
+  position: relative;
+  margin: auto;
+}
+
+.Home {
+  margin: auto;
+  width: 100%;
+  /* max-width: 1439px; */
+
+}
+
+.Home_List_Container{
+
+  max-width: 1439px;
+  width: 100%;
+  margin: auto;
+  background-color: #1B1B1B;
+}
+
+.Home_List { 
+  width: 95%;
+  margin: auto;
+  margin-top: 2%;
+  height: 100vh;
+  /* background-color: #1B1B1B; */
+}
+
+.Project_List{
+  position: relative;
+  width: 95%;
+  margin: auto;
+  margin-top: 2%;
+  height: 80vh;
+}
+
+.List_Title{
+  color: white;
+  font-weight: 600;
+  left: 10px;
+  width: 10vw;
+  text-align: left;
+  padding-left: 0.4%;
+  margin-top: 100px;
+}
+
+.Home_List ul {
+  margin-top: 200px;
+  width: 80%;
+  margin: auto; 
+  padding-top: 100px; 
+  list-style-type: none; 
+  list-style-image: none;
+  scrollbar-width: none !important;
+display: grid !important;
+grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 40px;
+/* height: 100% !important; */
+list-style: outside none none !important;
+flex-wrap: wrap;
+padding-left: 0px !important;
+margin-bottom: 0px !important;
+scroll-snap-type: x mandatory !important;
+}
+
+.Home_List li {
+  position: relative;
+  scroll-snap-align: start !important;
+  display: flex !important;
+  border-width: 0px 5px;
+  cursor: pointer !important;
+  -moz-box-direction: normal !important;
+  -moz-box-orient: vertical !important;
+  border: 1px solid #00000005 !important;
+  border-radius: 12px !important;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px !important;
+  color: rgb(34, 34, 34) !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif !important;
+  display: flex !important;
+  flex-direction: column !important;
+  height: 190px !important;
+  width: 100%;
+
+  white-space: normal !important;
+  word-wrap: break-word;
+}
+
+.list_AddForm{
+  position: sticky !important;
+  width: 100% !important;
+position: fixed !important;
+top: 0px !important;
+z-index: 10 !important;
+  display: flex !important;
+  flex-direction: row;
+width: 100% !important;
+border-spacing: 0px !important;
+position: relative !important;
+z-index: 5 !important;
+padding-bottom: 20px;
+border-bottom: 1px solid #0000002c !important;
+}
+
+.input_form {
+  width: 500px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 30px;
+}
+
+.list_AddForm input {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px, rgba(26, 26, 29, 0.08) 0px 4px 12px !important;
+  background-color: transparent !important;
+  border: 0px none !important;
+  margin: 0px !important;
+  width: 100% !important;
+  text-overflow: ellipsis !important;
+  font-weight: 800 !important;
+  font-size: 17px !important;
+  color: rgb(72, 72, 72) !important;
+  padding: 10px;
+  margin-left: 30px;
+  border-radius: 3px;
+}
+
+.list_AddForm_button {
+  margin-left: 30px;
+  border-radius: 3px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding: 8px20px 1px !important;
+margin-bottom: -1px !important;
+  background: var(--color-buttons-select-hover-color, #914669) !important;
+  border-color: var(--color-buttons-select-hover-border, transparent) !important;
+  color: var(--color-buttons-select-hover-text, #ffffff) !important;  
+  font-size: var(--font-button-font-size, 16px) !important;
+  line-height: var(--font-button-line-height, 24px) !important;
+  letter-spacing: var(--font-button-letter-spacing, normal) !important;
+  font-family: var(--font-button-font-family, Circular,-apple-system,BlinkMacSystemFont,Roboto,Helvetica Neue,) !important;
+  text-transform: var(--font-button-text-transform, undefined) !important;
+  font-size: 18px !important;
+  font-weight: 500;
+  line-height: 24px !important;
+  letter-spacing: normal !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif !important;
+}
+
+.list_AddForm h4{
+  margin: 0;
+  margin-top: 10px;
+}
+
+.List_element_title {
+  padding: 2px;
+  padding-top: 10px;
+  padding-left: 10px;
+  width: 97%;
+  height: 20%;
+  border-top: 1px solid #00000013;
+  position: absolute;
+  bottom: 0;
+  font-size: 14px !important;
+  line-height: 18px !important;
+  max-height: 36px !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2 !important;
+  -moz-box-orient: vertical !important;
+  font-weight: 600 !important;
+  white-space: normal !important;
+  letter-spacing: 0px !important;
+  word-break: break-word !important;
+  hyphens: auto !important;
+  text-decoration: none;
+  color: rgb(34, 34, 34) !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif !important;
+}
+
+.List_element_title a {
+  text-decoration: none;
+  color: rgb(34, 34, 34) !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif !important;
+}
+
+a {
+  
+  text-decoration: none !important;
+}
+
+.Home_List_Element{
+  width: 100%;
+  height: 100%;
+}
+
+.tasks_list{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.tasks_list > ul {
+  list-style-type: none; 
+  list-style-image: none;
+  list-style: none;
+}
+
+.tasks_list li {
+  text-decoration: none;
+  color: rgb(34, 34, 34) !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif !important;
+  border-bottom: 1px solid rgb(228, 228, 228) !important;
+}
+
+.list-group {
+  border-top: 1px solid rgb(228, 228, 228) !important;
+  border-left: 1px solid rgb(228, 228, 228) !important;
+  border-right: 1px solid rgb(228, 228, 228) !important;
+  border-radius: 3px;
+}
+
+.list-group-item {
+  padding: 3px;
+  padding-left: 10px;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+
+}
+
+.login_form {
+  text-align: center !important;
+margin-bottom: 24px !important;
+font-weight: 800 !important;
+font-size: 18px !important;
+line-height: 22px !important;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 40vh;
+  height: 80vh;
+  border: 1px solid rgb(228, 228, 228) !important;
+  margin-top: 10vh;
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+  border-radius: 3px;
+}
+
+.login_form h1 {
+  margin-top: 50px;
+  text-align: center !important;
+  margin-bottom: 50px !important;
+  font-weight: 800 !important;
+  font-size: 18px !important;
+  line-height: 22px !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+font-size: 14px;
+line-height: 1.43;
+color: #484848;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.login_form_input {
+  cursor: text !important;
+  display: flex !important;
+  height: 56px !important;
+  width: 94% !important;
+  border: 1px solid #48484838 !important;
+  color: rgb(34, 34, 34) !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+  font-weight: 400 !important;
+  background: none;
+  border-radius: 3px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.login_form_button {
+  margin-top: 10px;
+  cursor: pointer !important;
+  display: inline-block !important;
+  position: relative !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif !important;
+  font-size: 16px !important;
+  line-height: 20px !important;
+  font-weight: 600 !important;
+  border-radius: 8px !important;
+  outline: currentcolor none medium !important;
+  padding: 14px 24px !important;
+  transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, transform 0.1s ease 0s, transform 0.1s ease 0s !important;
+  border: medium none !important;
+  background: rgba(0, 0, 0, 0) linear-gradient(to right, rgb(230, 30, 77) 0%, rgb(227, 28, 95) 50%, rgb(215, 4, 102) 100%) repeat scroll 0% 0% !important;
+  color: rgb(255, 255, 255) !important;
+  width: 100% !important;
+}
